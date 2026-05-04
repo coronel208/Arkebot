@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Funciones — ArkeBot ICANH</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Cinzel:wght@400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+</head>
+<body class="page-landing">
+
+<div class="grid-bg"></div>
+<div class="glow-cyan"></div>
+<div class="glow-amber"></div>
+
+<nav class="nav">
+  <a class="nav-logo" href="index.html">
+    <div class="nav-mark"><svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+    <div><div class="nav-brand">ARKEBOT</div><div class="nav-tag">ICANH · Valle del Cauca</div></div>
+  </a>
+  <div class="nav-right">
+    <a href="features.html" class="nav-link" style="color:#fff;background:rgba(255,255,255,0.08)">Funciones</a>
+    <a href="about.html" class="nav-link">Nosotros</a>
+    <a href="app.html" class="nav-btn">Abrir App →</a>
+  </div>
+  <button class="hamburger" id="ham" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+</nav>
+<div class="mob-menu" id="mob">
+  <a href="index.html" onclick="toggleMenu()">🏠 Inicio</a>
+  <a href="about.html" onclick="toggleMenu()">👥 Nosotros</a>
+  <a href="app.html" class="m-app">🚀 Abrir App</a>
+</div>
+
+<div class="page-hero">
+  <div class="ph-inner">
+    <div class="sec-hl" style="justify-content:center;color:var(--gold)">Funcionalidades</div>
+    <h1 class="ph-title">Todo lo que tu colección<br><span>necesita</span></h1>
+    <p class="ph-desc">ArkeBot centraliza la catalogación arqueológica en un solo lugar. Sin papeles, sin formularios manuales — solo datos precisos.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="sec-in">
+    <div class="feat-grid">
+      <div class="fcard reveal">
+        <div class="ficon" style="background:rgba(0,194,212,0.15);color:var(--cyan)">📷</div>
+        <div class="ftitle">Carga múltiple</div>
+        <p class="fdesc">Arrastra todas las fotos juntas. ArkeBot detecta cuando varias fotos son del mismo objeto y elige automáticamente la mejor toma como vista principal.</p>
+      </div>
+      <div class="fcard reveal d1">
+        <div class="ficon" style="background:rgba(245,166,35,0.15);color:var(--gold)">🧠</div>
+        <div class="ftitle">100+ parámetros analizados</div>
+        <p class="fdesc">Material, técnica, manufactura, pátina, tafonomía, dimensiones, color Munsell, motivos decorativos, iconografía... Todo en cada análisis.</p>
+      </div>
+      <div class="fcard reveal d2">
+        <div class="ficon" style="background:rgba(45,106,79,0.15);color:var(--jade-light)">🏺</div>
+        <div class="ftitle">Reconoce culturas del Valle</div>
+        <p class="fdesc">Especializado en Ilama, Yotoco, Yotoco-Malagana, Sonso, Bolo, Quebrada Seca, Pichindé, Guabas y Buga.</p>
+      </div>
+      <div class="fcard reveal">
+        <div class="ficon" style="background:rgba(196,149,106,0.2);color:var(--arcilla)">📋</div>
+        <div class="ftitle">Ficha ICANH oficial</div>
+        <p class="fdesc">Formulario completo de Registro de Bienes Muebles del ICANH con 5 secciones y 30+ campos. Listo para entregar.</p>
+      </div>
+      <div class="fcard reveal d1">
+        <div class="ficon" style="background:rgba(192,57,43,0.12);color:#E74C3C">⚠️</div>
+        <div class="ftitle">Detecta lo NO arqueológico</div>
+        <p class="fdesc">Reconoce y descarta objetos modernos, capturas de pantalla, imágenes con varios objetos. Solo procesa lo que es relevante.</p>
+      </div>
+      <div class="fcard reveal d2">
+        <div class="ficon" style="background:rgba(245,166,35,0.15);color:var(--gold)">🤔</div>
+        <div class="ftitle">Pregunta cuando duda</div>
+        <p class="fdesc">Si la IA no está segura, en lugar de inventar te pide confirmación al arqueólogo. Puedes confirmar manualmente u omitir.</p>
+      </div>
+      <div class="fcard reveal">
+        <div class="ficon" style="background:rgba(0,194,212,0.15);color:var(--cyan)">🔍</div>
+        <div class="ftitle">Búsqueda con filtros</div>
+        <p class="fdesc">Filtra tu colección por cultura, forma, material, color, técnica, función, período, estado o nivel de verificación.</p>
+      </div>
+      <div class="fcard reveal d1">
+        <div class="ficon" style="background:rgba(82,183,136,0.15);color:var(--jade-light)">✓</div>
+        <div class="ftitle">Verificación manual</div>
+        <p class="fdesc">Marca cada pieza como "verificada" cuando hayas revisado el análisis. La IA aprende de tus correcciones para futuras fotos.</p>
+      </div>
+      <div class="fcard reveal d2">
+        <div class="ficon" style="background:rgba(13,110,138,0.15);color:var(--teal)">📄</div>
+        <div class="ftitle">Exportar PDF y Excel</div>
+        <p class="fdesc">Descarga la ficha en PDF formateado para impresión o CSV/Excel para hojas de cálculo. Compatible con sistemas archivísticos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="sec-in">
+    <div class="reveal">
+      <div class="sec-hl">Cómo funciona</div>
+      <h2 class="sec-title">De la cámara<br><span>a la ficha oficial</span></h2>
+      <p class="sec-desc">En cuatro pasos simples, conviertes una foto en un registro arqueológico completo.</p>
+    </div>
+    <div class="steps reveal">
+      <div class="step">
+        <div class="snum">01</div>
+        <div class="scon">
+          <div class="stitle">Configura tu API gratis de Gemini</div>
+          <p class="sdesc">Una sola vez. Vas a aistudio.google.com/apikey, creas una clave gratis (sin tarjeta de crédito) y la pegas en ArkeBot. Esto te da 500 análisis al día sin costo.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="snum">02</div>
+        <div class="scon">
+          <div class="stitle">Crea un proyecto</div>
+          <p class="sdesc">Cada proyecto representa una colección, excavación o sitio. Le pones nombre, descripción y un color para diferenciarlo de otros proyectos.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="snum">03</div>
+        <div class="scon">
+          <div class="stitle">Sube tus fotos y deja que la IA analice</div>
+          <p class="sdesc">Arrastra todas las imágenes que tengas. ArkeBot agrupa las que son del mismo objeto, elige la mejor toma y aplica el protocolo de 100+ parámetros para cada pieza.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="snum gold">04</div>
+        <div class="scon">
+          <div class="stitle">Revisa, verifica y exporta</div>
+          <p class="sdesc">Edita los campos que quieras, marca como verificadas las piezas que confirmas, y exporta la ficha ICANH oficial en PDF o Excel para entregar al instituto.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-bar">
+  <div class="cta-in">
+    <h2 class="cta-title">¿Listo para empezar?</h2>
+    <p class="cta-sub">Gratis · Sin instalación · 500 análisis al día con tu clave de Gemini</p>
+    <a href="app.html" class="btn-gold">🚀 Abrir ArkeBot ahora</a>
+  </div>
+</section>
+
+<footer>
+  <p>Hecho con 🏺 por <strong>Mecha Titans</strong> — equipo FLL · <strong>ArkeBot ICANH</strong> — Temporada 2025–2026</p>
+</footer>
+
+<script src="shared.js"></script>
+</body>
+</html>

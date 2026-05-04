@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ArkeBot ICANH — Catalogación arqueológica del Valle del Cauca</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Cinzel:wght@400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+</head>
+<body class="page-landing">
+
+<div class="grid-bg"></div>
+<div class="glow-cyan"></div>
+<div class="glow-amber"></div>
+
+<!-- NAV -->
+<nav class="nav">
+  <a class="nav-logo" href="index.html">
+    <div class="nav-mark"><svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+    <div>
+      <div class="nav-brand">ARKEBOT</div>
+      <div class="nav-tag">ICANH · Valle del Cauca</div>
+    </div>
+  </a>
+  <div class="nav-right">
+    <a href="features.html" class="nav-link">Funciones</a>
+    <a href="about.html" class="nav-link">Nosotros</a>
+    <a href="app.html" class="nav-btn">Abrir App →</a>
+  </div>
+  <button class="hamburger" id="ham" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+</nav>
+<div class="mob-menu" id="mob">
+  <a href="features.html" onclick="toggleMenu()">⚙️ Funciones</a>
+  <a href="about.html" onclick="toggleMenu()">👥 Nosotros</a>
+  <a href="app.html" class="m-app">🚀 Abrir App</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="badge">
+      <span class="badge-dot"></span>
+      ESPECIALIZADO EN CULTURAS DEL VALLE DEL CAUCA
+    </div>
+    <h1 class="hero-title">
+      Cataloga el<br>
+      <span class="hero-accent">patrimonio arqueológico</span><br>
+      vallecaucano
+    </h1>
+    <p class="hero-desc">
+      ArkeBot reconoce las tipologías cerámicas, orfebrería y formas características de las culturas precolombinas del Valle del Cauca: <strong>Ilama, Yotoco-Malagana, Sonso, Bolo, Quebrada Seca, Guabas y Buga</strong>. Genera fichas ICANH oficiales automáticamente.
+    </p>
+    <div class="hero-buttons">
+      <a href="app.html" class="btn-primary">
+        <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+        Comenzar ahora
+      </a>
+      <a href="app.html?tutorial=1" class="btn-secondary">📚 Ver tutorial guiado →</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="hstat">
+        <div class="hstat-num">100+</div>
+        <div class="hstat-lbl">parámetros analizados</div>
+      </div>
+      <div class="hstat">
+        <div class="hstat-num">9</div>
+        <div class="hstat-lbl">culturas del Valle</div>
+      </div>
+      <div class="hstat">
+        <div class="hstat-num">100%</div>
+        <div class="hstat-lbl">gratis con Gemini</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT IT DOES -->
+<section class="section">
+  <div class="sec-in">
+    <div class="reveal">
+      <div class="sec-hl">¿Qué hace ArkeBot?</div>
+      <h2 class="sec-title">Tres pasos simples<br><span>de la foto a la ficha</span></h2>
+      <p class="sec-desc">Sube fotografías de piezas arqueológicas y obtén automáticamente fichas ICANH compatibles con el formato oficial colombiano. Funciona desde cualquier navegador.</p>
+    </div>
+
+    <div class="feat-grid">
+      <div class="fcard reveal">
+        <div class="ficon" style="background:#E8F8FA">📷</div>
+        <div class="ftitle">Sube tus fotos</div>
+        <p class="fdesc">Arrastra cualquier número de imágenes. ArkeBot detecta automáticamente cuándo varias fotos son del mismo objeto y las agrupa para análisis conjunto.</p>
+      </div>
+      <div class="fcard reveal d1">
+        <div class="ficon" style="background:#FFF8E8">🧠</div>
+        <div class="ftitle">IA analiza con 100+ parámetros</div>
+        <p class="fdesc">Reconoce material, técnica, forma, decoración, pátina, tafonomía. Especializado en culturas Ilama, Yotoco, Sonso y demás del Valle del Cauca.</p>
+      </div>
+      <div class="fcard reveal d2">
+        <div class="ficon" style="background:#E8FAF0">📋</div>
+        <div class="ftitle">Ficha ICANH lista</div>
+        <p class="fdesc">Genera el formulario de Registro de Bienes Muebles del ICANH con todos los campos completos. Exporta a PDF o Excel con un click.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COVERAGE -->
+<section class="section section-alt">
+  <div class="sec-in">
+    <div class="two-col">
+      <div class="reveal">
+        <div class="sec-hl">Cobertura especializada</div>
+        <h2 class="sec-title">Culturas del<br><span>Valle del Cauca</span></h2>
+        <p class="sec-desc">ArkeBot está optimizado para reconocer las tradiciones cerámicas, líticas y de orfebrería de las culturas precolombinas vallecaucanas. Su base de conocimiento incluye datos del INCIVA, Museo del Oro Calima y publicaciones académicas de Bray, Cardale y Rodríguez.</p>
+        <div style="margin-top:24px;padding:14px 18px;background:rgba(245,166,35,0.08);border-left:3px solid var(--gold);border-radius:6px;font-size:0.86rem;color:rgba(255,255,255,0.7);line-height:1.7">
+          <strong style="color:var(--gold)">Nota:</strong> Para piezas de otras culturas colombianas (Muisca, Tairona, Tumaco, Quimbaya, etc.) la app también clasifica, pero con menor precisión.
+        </div>
+      </div>
+      <div class="culture-grid reveal d1">
+        <div class="culture-card">
+          <div class="culture-name">Ilama</div>
+          <div class="culture-period">1500 a.C. — 100 d.C.</div>
+          <div class="culture-feat">Alcarrazas bicromas, canasteros</div>
+        </div>
+        <div class="culture-card">
+          <div class="culture-name">Yotoco</div>
+          <div class="culture-period">100 — 1200 d.C.</div>
+          <div class="culture-feat">Pintura negativa, orfebrería</div>
+        </div>
+        <div class="culture-card">
+          <div class="culture-name">Yotoco-Malagana</div>
+          <div class="culture-period">100 a.C. — 400 d.C.</div>
+          <div class="culture-feat">Élite funeraria, oro fino</div>
+        </div>
+        <div class="culture-card">
+          <div class="culture-name">Sonso</div>
+          <div class="culture-period">700 — 1600 d.C.</div>
+          <div class="culture-feat">Cántaros 3 asas, asimétricos</div>
+        </div>
+        <div class="culture-card">
+          <div class="culture-name">Bolo</div>
+          <div class="culture-period">800 — 1300 d.C.</div>
+          <div class="culture-feat">Cordillera Central, Palmira</div>
+        </div>
+        <div class="culture-card">
+          <div class="culture-name">Quebrada Seca</div>
+          <div class="culture-period">Siglos XIV — XVI</div>
+          <div class="culture-feat">Pre-conquista, Cali rural</div>
+        </div>
+        <div class="culture-card">
+          <div class="culture-name">Pichindé</div>
+          <div class="culture-period">Tardío</div>
+          <div class="culture-feat">Cordillera Occidental, Cali</div>
+        </div>
+        <div class="culture-card">
+          <div class="culture-name">Guabas</div>
+          <div class="culture-period">VII — VIII d.C.</div>
+          <div class="culture-feat">Vasijas asimétricas, Guacarí</div>
+        </div>
+        <div class="culture-card">
+          <div class="culture-name">Buga</div>
+          <div class="culture-period">Tardío</div>
+          <div class="culture-feat">Valle medio del Cauca</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMUNITY TEASER -->
+<section class="section">
+  <div class="sec-in">
+    <div class="reveal" style="text-align:center;max-width:680px;margin:0 auto 40px">
+      <div class="sec-hl" style="justify-content:center">Próximamente</div>
+      <h2 class="sec-title">Comunidad de<br><span>arqueólogos digitales</span></h2>
+      <p class="sec-desc" style="margin:0 auto">Un espacio donde cada catalogador podrá compartir sus colecciones, comparar tipologías con otros expertos y construir un repositorio público abierto del patrimonio del Valle del Cauca.</p>
+    </div>
+
+    <div class="upcoming-grid">
+      <div class="up-card reveal">
+        <div class="up-icon">🔐</div>
+        <div class="up-title">Cuenta personal</div>
+        <p class="up-desc">Registro e inicio de sesión vinculado a Firebase. Tu API key, tus proyectos y configuraciones sincronizadas en la nube.</p>
+      </div>
+      <div class="up-card reveal d1">
+        <div class="up-icon">☁️</div>
+        <div class="up-title">Acceso multi-dispositivo</div>
+        <p class="up-desc">Trabaja desde el celular en campo y continúa en el computador del laboratorio. Tus piezas siempre disponibles.</p>
+      </div>
+      <div class="up-card reveal d2">
+        <div class="up-icon">🌐</div>
+        <div class="up-title">Repositorio público</div>
+        <p class="up-desc">Comparte fichas con otros arqueólogos y descubre piezas similares a las tuyas. Investigación colaborativa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-bar">
+  <div class="cta-in">
+    <h2 class="cta-title">¿Listo para catalogar?</h2>
+    <p class="cta-sub">Gratis · Sin instalación · Funciona en cualquier navegador</p>
+    <a href="app.html" class="btn-gold">🚀 Abrir ArkeBot ahora</a>
+  </div>
+</section>
+
+<footer>
+  <p>Hecho con 🏺 por <strong>Mecha Titans</strong> — equipo FLL · <strong>ArkeBot ICANH</strong> — Temporada 2025–2026</p>
+</footer>
+
+<script src="shared.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nosotros — ArkeBot ICANH</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Cinzel:wght@400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+</head>
+<body class="page-landing">
+
+<div class="grid-bg"></div>
+<div class="glow-cyan"></div>
+<div class="glow-amber"></div>
+
+<nav class="nav">
+  <a class="nav-logo" href="index.html">
+    <div class="nav-mark"><svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+    <div><div class="nav-brand">ARKEBOT</div><div class="nav-tag">ICANH · Valle del Cauca</div></div>
+  </a>
+  <div class="nav-right">
+    <a href="features.html" class="nav-link">Funciones</a>
+    <a href="about.html" class="nav-link" style="color:#fff;background:rgba(255,255,255,0.08)">Nosotros</a>
+    <a href="app.html" class="nav-btn">Abrir App →</a>
+  </div>
+  <button class="hamburger" id="ham" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+</nav>
+<div class="mob-menu" id="mob">
+  <a href="index.html" onclick="toggleMenu()">🏠 Inicio</a>
+  <a href="features.html" onclick="toggleMenu()">⚙️ Funciones</a>
+  <a href="app.html" class="m-app">🚀 Abrir App</a>
+</div>
+
+<div class="page-hero">
+  <div class="ph-inner">
+    <div class="sec-hl" style="justify-content:center;color:var(--gold)">Quiénes somos</div>
+    <h1 class="ph-title">Detrás de<br><span>ArkeBot ICANH</span></h1>
+    <p class="ph-desc">Un proyecto del equipo Mecha Titans, club de robótica del Seminario Diocesano Cristo Sacerdote, presentado en la temporada FLL 2025–2026.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="sec-in">
+    <div class="two-col">
+      <div class="reveal">
+        <div class="sec-hl">El problema que resolvemos</div>
+        <h2 class="sec-title">Catalogar piezas<br><span>toma horas</span></h2>
+        <p class="sec-desc" style="margin-bottom:18px">El ICANH (Instituto Colombiano de Antropología e Historia) requiere un formulario muy detallado de Registro de Bienes Muebles para cada pieza arqueológica. Llenarlo manualmente puede tomar entre 30 minutos y 2 horas por pieza.</p>
+        <p class="sec-desc">En el Valle del Cauca hay miles de piezas en colecciones particulares y comunitarias que nunca se han registrado oficialmente porque el proceso es lento y técnico. Nuestro objetivo es democratizar la catalogación para que cualquier coleccionista, museo comunitario o estudiante pueda contribuir al patrimonio nacional.</p>
+      </div>
+      <div class="reveal d1">
+        <div class="sec-hl">Nuestra solución</div>
+        <h2 class="sec-title" style="font-size:1.7rem">IA + conocimiento<br><span>especializado</span></h2>
+        <p class="sec-desc" style="margin-bottom:18px">ArkeBot combina la visión por computadora de Gemini de Google con una base de conocimiento curada sobre las culturas del Valle del Cauca, basada en publicaciones del INCIVA, el Museo del Oro Calima y trabajos académicos de Bray, Cardale y Rodríguez.</p>
+        <p class="sec-desc">El resultado: una ficha ICANH completa generada en menos de 30 segundos, lista para ser revisada por un arqueólogo y enviada a las autoridades.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="sec-in">
+    <div class="reveal" style="text-align:center;max-width:680px;margin:0 auto">
+      <div class="sec-hl" style="justify-content:center">Nuestro equipo</div>
+      <h2 class="sec-title">Mecha Titans —<br><span>Club de robótica</span></h2>
+      <p class="sec-desc" style="margin:0 auto 12px">Somos un equipo de estudiantes apasionados por combinar tecnología y patrimonio cultural. Trabajamos juntos durante toda la temporada FLL para construir esta herramienta.</p>
+    </div>
+
+    <div class="team-grid">
+      <div class="team-card reveal">
+        <div class="team-photo">M</div>
+        <div class="team-name">Mecha Titans</div>
+        <div class="team-role">FLL Colombia · 2025-2026</div>
+        <div class="team-desc">Club de robótica del Seminario Diocesano Cristo Sacerdote</div>
+      </div>
+      <div class="team-card reveal d1">
+        <div class="team-photo" style="background:linear-gradient(135deg,#0D6E8A,#00C2D4)">D</div>
+        <div class="team-name">Desarrollo</div>
+        <div class="team-role">Equipo técnico</div>
+        <div class="team-desc">Programación de la app web, integración con IA y diseño de interfaz</div>
+      </div>
+      <div class="team-card reveal d2">
+        <div class="team-photo" style="background:linear-gradient(135deg,#F5A623,#C9A84C)">A</div>
+        <div class="team-name">Arqueología</div>
+        <div class="team-role">Investigación</div>
+        <div class="team-desc">Recolección de fuentes, validación con expertos del INCIVA</div>
+      </div>
+      <div class="team-card reveal d3">
+        <div class="team-photo" style="background:linear-gradient(135deg,#2D6A4F,#52B788)">I</div>
+        <div class="team-name">Innovación</div>
+        <div class="team-role">FLL Innovation Project</div>
+        <div class="team-desc">Conceptualización del proyecto y presentación al jurado</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="sec-in">
+    <div class="reveal">
+      <div class="sec-hl">Tecnología que usamos</div>
+      <h2 class="sec-title">Construido con<br><span>herramientas modernas</span></h2>
+    </div>
+    <div class="feat-grid" style="margin-top:32px">
+      <div class="fcard reveal">
+        <div class="ficon" style="background:rgba(0,194,212,0.15);color:var(--cyan)">🧠</div>
+        <div class="ftitle">Gemini AI · Google</div>
+        <p class="fdesc">Modelo multimodal de Google con visión por computadora. Lee la foto y aplica nuestro protocolo de 100+ parámetros arqueológicos.</p>
+      </div>
+      <div class="fcard reveal d1">
+        <div class="ficon" style="background:rgba(245,166,35,0.15);color:var(--gold)">📚</div>
+        <div class="ftitle">Base de conocimiento</div>
+        <p class="fdesc">Datos curados del INCIVA, Museo del Oro Calima, Wikipedia académica, y publicaciones de Bray, Cardale y Rodríguez sobre Calima.</p>
+      </div>
+      <div class="fcard reveal d2">
+        <div class="ficon" style="background:rgba(45,106,79,0.15);color:var(--jade-light)">🔥</div>
+        <div class="ftitle">Firebase · Próximamente</div>
+        <p class="fdesc">Almacenamiento en la nube para usuarios registrados. Tus proyectos accesibles desde cualquier dispositivo.</p>
+      </div>
+      <div class="fcard reveal">
+        <div class="ficon" style="background:rgba(196,149,106,0.2);color:var(--arcilla)">📋</div>
+        <div class="ftitle">Estándar ICANH</div>
+        <p class="fdesc">Formato oficial colombiano de Registro de Bienes Muebles Arqueológicos. Compatibilidad total con el formulario del Instituto.</p>
+      </div>
+      <div class="fcard reveal d1">
+        <div class="ficon" style="background:rgba(82,183,136,0.15);color:var(--jade-light)">🌐</div>
+        <div class="ftitle">100% Web</div>
+        <p class="fdesc">Funciona desde cualquier navegador moderno. Sin instalación, sin servidor propio. HTML, CSS y JavaScript puros.</p>
+      </div>
+      <div class="fcard reveal d2">
+        <div class="ficon" style="background:rgba(192,57,43,0.12);color:#E74C3C">📷</div>
+        <div class="ftitle">Análisis grupal</div>
+        <p class="fdesc">Detecta automáticamente cuando varias fotos son del mismo objeto y consolida la información en un solo registro.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-bar">
+  <div class="cta-in">
+    <h2 class="cta-title">¿Listo para probar ArkeBot?</h2>
+    <p class="cta-sub">Gratis · Sin instalación · Open source</p>
+    <a href="app.html" class="btn-gold">🚀 Abrir ArkeBot ahora</a>
+  </div>
+</section>
+
+<footer>
+  <p>Hecho con 🏺 por <strong>Mecha Titans</strong> — equipo FLL · <strong>ArkeBot ICANH</strong> — Temporada 2025–2026</p>
+</footer>
+
+<script src="shared.js"></script>
+</body>
+</html>
