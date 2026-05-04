@@ -2431,8 +2431,8 @@ FASE 2 (ANÁLISIS ARQUEOLÓGICO): Solo si es genuinamente arqueológico, aplica 
         }
       };
 
-      // Nota: Usamos gemini-1.5-flash que es el modelo oficial actual más rápido y estable
-      const url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=' + encodeURIComponent(apiKey);
+      // Línea corregida:
+const url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=' + encodeURIComponent(apiKey);
 
       const resp = await fetch(url, {
         method: 'POST',
